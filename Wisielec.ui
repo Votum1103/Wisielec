@@ -1372,6 +1372,32 @@ QPushButton:pressed {
     }</string>
    </property>
   </widget>
+  <widget class="QLabel" name="keyword_label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>370</y>
+     <width>551</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>finalword_lineEdit</zorder>
   <zorder>szub2_label</zorder>
   <zorder>szub1_label</zorder>
@@ -1420,6 +1446,7 @@ QPushButton:pressed {
   <zorder>szub8_label</zorder>
   <zorder>szub9_label</zorder>
   <zorder>szub3_label</zorder>
+  <zorder>keyword_label</zorder>
  </widget>
  <resources/>
  <connections/>
