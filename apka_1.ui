@@ -240,7 +240,7 @@ background-color:transparent;</string>
     <string>Wisielec</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_multi_pict">
    <property name="geometry">
     <rect>
      <x>233</x>
@@ -262,7 +262,7 @@ background-color:transparent;</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="label_single_pict">
    <property name="geometry">
     <rect>
      <x>237</x>
