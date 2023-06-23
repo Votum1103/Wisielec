@@ -3,7 +3,7 @@ from PyQt5 import QtCore
 
 def retranslateUi(self, dialog_game):
     _translate = QtCore.QCoreApplication.translate
-    dialog_game.setWindowTitle(_translate("dialog_game", "Dialog"))
+    dialog_game.setWindowTitle(_translate("dialog_game", "Wisielec"))
     self.pushButton_singleplayer.setText(
         _translate("dialog_game", "SINGLEPLAYER"))
     self.pushButton_multiplayer.setText(
