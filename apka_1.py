@@ -201,7 +201,7 @@ class Ui_dialog_game(object):
         self.pushButton_instruction_wroc = QtWidgets.QPushButton(
             self.groupBox_instruction)
         self.pushButton_instruction_wroc.setGeometry(
-            QtCore.QRect(480, 310, 113, 32))
+            QtCore.QRect(460, 310, 151, 41))
         self.pushButton_instruction_wroc.setStyleSheet("QPushButton {\n"
                                                        "    color: #565A5B;\n"
                                                        "    border: 1px solid black;\n"
@@ -256,7 +256,7 @@ class Ui_dialog_game(object):
                                                              "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">4.  Słowa zgadujemy,  wpisując po jednej literze alfabetu polskiego. </span></p>\n"
                                                              "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">5.  Jeśli domyślasz się,  jakie będzie słowo zanim zgadniesz wszystkie litery, możesz podjąć próbę odgadnięcia go,  wciskając przycisk &quot;tak&quot; w polu &quot;Czy chcesz odgadnąć hasło&quot;,  a następnie wpisując słowo.  W razie nieudanej próby zostanie odjęte 5 pkt. </span></p></body></html>"))
         self.pushButton_instruction_wroc.setText(
-            _translate("dialog_game", "Wróć"))
+            _translate("dialog_game", "WRÓĆ"))
 
     def print_instruction(self):
         self.groupBox_instruction.setVisible(True)
