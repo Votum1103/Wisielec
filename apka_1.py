@@ -15,21 +15,26 @@ class Ui_dialog_game(object):
     def setupUi(self, dialog_game):
         dialog_game.setObjectName("dialog_game")
         dialog_game.resize(677, 574)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(dialog_game.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            dialog_game.sizePolicy().hasHeightForWidth())
         dialog_game.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Futura")
         dialog_game.setFont(font)
         dialog_game.setStyleSheet("background-color: #282836;")
         self.pushButton_singleplayer = QtWidgets.QPushButton(dialog_game)
-        self.pushButton_singleplayer.setGeometry(QtCore.QRect(220, 230, 251, 71))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        self.pushButton_singleplayer.setGeometry(
+            QtCore.QRect(220, 230, 251, 71))
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(12)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_singleplayer.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.pushButton_singleplayer.sizePolicy().hasHeightForWidth())
         self.pushButton_singleplayer.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Helvetica")
@@ -42,39 +47,41 @@ class Ui_dialog_game(object):
         self.pushButton_singleplayer.setMouseTracking(False)
         self.pushButton_singleplayer.setAutoFillBackground(False)
         self.pushButton_singleplayer.setStyleSheet("QPushButton {\n"
-"    color: #0BAEF5;\n"
-"    font-size: 18px;\n"
-"    text-align: right;\n"
-"    border: 1px solid #89959B;\n"
-"    border-radius: 10px;\n"
-"    background: qlineargradient(\n"
-"        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #0BAEF5  stop: 0.3 #0BAEF5\n"
-"        stop: 0.301 #FCFCFC, stop: 1 #FCFCFC\n"
-"        );\n"
-"    padding: 20px;\n"
-"    }\n"
-"\n"
-"QPushButton:hover {\n"
-"    color: #FFFFFF;\n"
-"    background: qlineargradient(\n"
-"        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #FCFCFC,  stop: 0.3 #FCFCFC\n"
-"        stop: 0.301 #0BAEF5, stop: 1 #0BAEF5\n"
-"        );\n"
-"    }\n"
-"\n"
-"QPushButton:pressed {\n"
-"    color: #E9AFEE;\n"
-"    border-style: inset;\n"
-"    background: qlineargradient(\n"
-"        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #E9AFEE,  stop: 0.3 #E9AFEE\n"
-"        stop: 0.301 #F9E8FA stop: 1 #F9E8FA\n"
-"        );\n"
-"    }")
-        self.pushButton_singleplayer.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
+                                                   "    color: #0BAEF5;\n"
+                                                   "    font-size: 18px;\n"
+                                                   "    text-align: right;\n"
+                                                   "    border: 1px solid #89959B;\n"
+                                                   "    border-radius: 10px;\n"
+                                                   "    background: qlineargradient(\n"
+                                                   "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #0BAEF5  stop: 0.3 #0BAEF5\n"
+                                                   "        stop: 0.301 #FCFCFC, stop: 1 #FCFCFC\n"
+                                                   "        );\n"
+                                                   "    padding: 20px;\n"
+                                                   "    }\n"
+                                                   "\n"
+                                                   "QPushButton:hover {\n"
+                                                   "    color: #FFFFFF;\n"
+                                                   "    background: qlineargradient(\n"
+                                                   "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #FCFCFC,  stop: 0.3 #FCFCFC\n"
+                                                   "        stop: 0.301 #0BAEF5, stop: 1 #0BAEF5\n"
+                                                   "        );\n"
+                                                   "    }\n"
+                                                   "\n"
+                                                   "QPushButton:pressed {\n"
+                                                   "    color: #6CBAD2;\n"
+                                                   "    border-style: inset;\n"
+                                                   "    background: qlineargradient(\n"
+                                                   "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #6CBAD2,  stop: 0.3 #6CBAD2\n"
+                                                   "        stop: 0.301 #EFFCFF stop: 1 #EFFCFF\n"
+                                                   "        );\n"
+                                                   "    }")
+        self.pushButton_singleplayer.setLocale(QtCore.QLocale(
+            QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
         self.pushButton_singleplayer.setIconSize(QtCore.QSize(400, 400))
         self.pushButton_singleplayer.setObjectName("pushButton_singleplayer")
         self.pushButton_multiplayer = QtWidgets.QPushButton(dialog_game)
-        self.pushButton_multiplayer.setGeometry(QtCore.QRect(220, 330, 251, 71))
+        self.pushButton_multiplayer.setGeometry(
+            QtCore.QRect(220, 330, 251, 71))
         font = QtGui.QFont()
         font.setFamily("Helvetica")
         font.setPointSize(-1)
@@ -86,67 +93,69 @@ class Ui_dialog_game(object):
         self.pushButton_multiplayer.setMouseTracking(False)
         self.pushButton_multiplayer.setAutoFillBackground(False)
         self.pushButton_multiplayer.setStyleSheet("QPushButton {\n"
-"    color: #F27FFA;\n"
-"    text-align: right;\n"
-"    font-size: 18px;\n"
-"    border: 1px solid #89959B;\n"
-"    border-radius: 10px;\n"
-"    background: qlineargradient(\n"
-"        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #F27FFA,  stop: 0.3 #F27FFA\n"
-"        stop: 0.301 #FCFCFC, stop: 1 #FCFCFC\n"
-"        );\n"
-"    padding: 20px;\n"
-"    }\n"
-"\n"
-"QPushButton:hover {\n"
-"    color: #FFFFFF;\n"
-"    background: qlineargradient(\n"
-"        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #FCFCFC,  stop: 0.3 #FCFCFC\n"
-"        stop: 0.301 #F27FFA, stop: 1 #F27FFA\n"
-"        );\n"
-"    }\n"
-"\n"
-"QPushButton:pressed {\n"
-"    color: #E9AFEE;\n"
-"    border-style: inset;\n"
-"    background: qlineargradient(\n"
-"        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #E9AFEE,  stop: 0.3 #E9AFEE\n"
-"        stop: 0.301 #F9E8FA stop: 1 #F9E8FA\n"
-"        );\n"
-"    }")
-        self.pushButton_multiplayer.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
+                                                  "    color: #F27FFA;\n"
+                                                  "    text-align: right;\n"
+                                                  "    font-size: 18px;\n"
+                                                  "    border: 1px solid #89959B;\n"
+                                                  "    border-radius: 10px;\n"
+                                                  "    background: qlineargradient(\n"
+                                                  "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #F27FFA,  stop: 0.3 #F27FFA\n"
+                                                  "        stop: 0.301 #FCFCFC, stop: 1 #FCFCFC\n"
+                                                  "        );\n"
+                                                  "    padding: 20px;\n"
+                                                  "    }\n"
+                                                  "\n"
+                                                  "QPushButton:hover {\n"
+                                                  "    color: #FFFFFF;\n"
+                                                  "    background: qlineargradient(\n"
+                                                  "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #FCFCFC,  stop: 0.3 #FCFCFC\n"
+                                                  "        stop: 0.301 #F27FFA, stop: 1 #F27FFA\n"
+                                                  "        );\n"
+                                                  "    }\n"
+                                                  "\n"
+                                                  "QPushButton:pressed {\n"
+                                                  "    color: #E9AFEE;\n"
+                                                  "    border-style: inset;\n"
+                                                  "    background: qlineargradient(\n"
+                                                  "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #E9AFEE,  stop: 0.3 #E9AFEE\n"
+                                                  "        stop: 0.301 #F9E8FA stop: 1 #F9E8FA\n"
+                                                  "        );\n"
+                                                  "    }")
+        self.pushButton_multiplayer.setLocale(QtCore.QLocale(
+            QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
         self.pushButton_multiplayer.setIconSize(QtCore.QSize(400, 400))
         self.pushButton_multiplayer.setObjectName("pushButton_multiplayer")
         self.pushButton_instruction = QtWidgets.QPushButton(dialog_game)
-        self.pushButton_instruction.setGeometry(QtCore.QRect(480, 500, 151, 41))
+        self.pushButton_instruction.setGeometry(
+            QtCore.QRect(480, 500, 151, 41))
         font = QtGui.QFont()
         font.setFamily("Helvetica")
         font.setPointSize(-1)
         self.pushButton_instruction.setFont(font)
         self.pushButton_instruction.setStyleSheet("QPushButton {\n"
-"    color: #565A5B;\n"
-"    border: 1px solid black;\n"
-"    font-size: 14px;\n"
-"    border-radius: 10px;\n"
-"    background-color: #C5DEEB;\n"
-"    padding: 3px;\n"
-"    }\n"
-"\n"
-"QPushButton:hover {\n"
-"    background: qradialgradient(\n"
-"        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-"        radius: 1.35, stop: 0 #fff, stop: 1 #A5E2FF\n"
-"        );\n"
-"    }\n"
-"\n"
-"QPushButton:pressed {\n"
-"    color: #0B5AE1;\n"
-"    border-style: inset;\n"
-"    background: qradialgradient(\n"
-"        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,\n"
-"        radius: 1.35, stop: 0 #fff, stop: 1 #D7B5F9\n"
-"        );\n"
-"    }")
+                                                  "    color: #565A5B;\n"
+                                                  "    border: 1px solid black;\n"
+                                                  "    font-size: 14px;\n"
+                                                  "    border-radius: 10px;\n"
+                                                  "    background-color: #C5DEEB;\n"
+                                                  "    padding: 3px;\n"
+                                                  "    }\n"
+                                                  "\n"
+                                                  "QPushButton:hover {\n"
+                                                  "    background: qradialgradient(\n"
+                                                  "        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+                                                  "        radius: 1.35, stop: 0 #fff, stop: 1 #A5E2FF\n"
+                                                  "        );\n"
+                                                  "    }\n"
+                                                  "\n"
+                                                  "QPushButton:pressed {\n"
+                                                  "    color: #0B5AE1;\n"
+                                                  "    border-style: inset;\n"
+                                                  "    background: qradialgradient(\n"
+                                                  "        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,\n"
+                                                  "        radius: 1.35, stop: 0 #fff, stop: 1 #D7B5F9\n"
+                                                  "        );\n"
+                                                  "    }")
         self.pushButton_instruction.setObjectName("pushButton_instruction")
         self.Wisielec_napis = QtWidgets.QLabel(dialog_game)
         self.Wisielec_napis.setGeometry(QtCore.QRect(250, 90, 211, 81))
@@ -156,82 +165,104 @@ class Ui_dialog_game(object):
         font.setKerning(False)
         self.Wisielec_napis.setFont(font)
         self.Wisielec_napis.setStyleSheet("color: #0BAEF5;\n"
-"background-color:transparent;")
+                                          "background-color:transparent;")
         self.Wisielec_napis.setObjectName("Wisielec_napis")
         self.label_multi_pict = QtWidgets.QLabel(dialog_game)
         self.label_multi_pict.setGeometry(QtCore.QRect(233, 350, 51, 31))
         self.label_multi_pict.setStyleSheet("background-color: transparent;")
         self.label_multi_pict.setText("")
-        self.label_multi_pict.setPixmap(QtGui.QPixmap("../../Downloads/mul.png"))
+        self.label_multi_pict.setPixmap(
+            QtGui.QPixmap("../../Downloads/mul.png"))
         self.label_multi_pict.setScaledContents(True)
         self.label_multi_pict.setObjectName("label_multi_pict")
         self.label_single_pict = QtWidgets.QLabel(dialog_game)
         self.label_single_pict.setGeometry(QtCore.QRect(237, 235, 41, 51))
         self.label_single_pict.setStyleSheet("background-color: transparent;")
         self.label_single_pict.setText("")
-        self.label_single_pict.setPixmap(QtGui.QPixmap("../../Downloads/sing.png"))
+        self.label_single_pict.setPixmap(
+            QtGui.QPixmap("../../Downloads/sing.png"))
         self.label_single_pict.setScaledContents(True)
         self.label_single_pict.setObjectName("label_single_pict")
         self.groupBox_instruction = QtWidgets.QGroupBox(dialog_game)
-        self.groupBox_instruction.setGeometry(QtCore.QRect(30, 170, 611, 381))
+        self.groupBox_instruction.setGeometry(QtCore.QRect(20, 190, 611, 371))
         font = QtGui.QFont()
         font.setFamily("Helvetica")
         font.setPointSize(18)
         self.groupBox_instruction.setFont(font)
         self.groupBox_instruction.setStyleSheet("color: white;")
         self.groupBox_instruction.setObjectName("groupBox_instruction")
-        self.textBrowser_instruction_text = QtWidgets.QTextBrowser(self.groupBox_instruction)
-        self.textBrowser_instruction_text.setGeometry(QtCore.QRect(20, 50, 581, 211))
-        self.textBrowser_instruction_text.setObjectName("textBrowser_instruction_text")
-        self.pushButton_instruction_wroc = QtWidgets.QPushButton(self.groupBox_instruction)
-        self.pushButton_instruction_wroc.setGeometry(QtCore.QRect(480, 310, 113, 32))
+        self.groupBox_instruction.setVisible(False)
+        self.textBrowser_instruction_text = QtWidgets.QTextBrowser(
+            self.groupBox_instruction)
+        self.textBrowser_instruction_text.setGeometry(
+            QtCore.QRect(20, 50, 581, 211))
+        self.textBrowser_instruction_text.setObjectName(
+            "textBrowser_instruction_text")
+        self.pushButton_instruction_wroc = QtWidgets.QPushButton(
+            self.groupBox_instruction)
+        self.pushButton_instruction_wroc.setGeometry(
+            QtCore.QRect(480, 310, 113, 32))
         self.pushButton_instruction_wroc.setStyleSheet("QPushButton {\n"
-"    color: #565A5B;\n"
-"    border: 1px solid black;\n"
-"    font-size: 14px;\n"
-"    border-radius: 10px;\n"
-"    background-color: #C5DEEB;\n"
-"    padding: 3px;\n"
-"    }\n"
-"\n"
-"QPushButton:hover {\n"
-"    background: qradialgradient(\n"
-"        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-"        radius: 1.35, stop: 0 #fff, stop: 1 #A5E2FF\n"
-"        );\n"
-"    }\n"
-"\n"
-"QPushButton:pressed {\n"
-"    color: #0B5AE1;\n"
-"    border-style: inset;\n"
-"    background: qradialgradient(\n"
-"        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,\n"
-"        radius: 1.35, stop: 0 #fff, stop: 1 #D7B5F9\n"
-"        );\n"
-"    }")
-        self.pushButton_instruction_wroc.setObjectName("pushButton_instruction_wroc")
+                                                       "    color: #565A5B;\n"
+                                                       "    border: 1px solid black;\n"
+                                                       "    font-size: 14px;\n"
+                                                       "    border-radius: 10px;\n"
+                                                       "    background-color: #C5DEEB;\n"
+                                                       "    padding: 3px;\n"
+                                                       "    }\n"
+                                                       "\n"
+                                                       "QPushButton:hover {\n"
+                                                       "    background: qradialgradient(\n"
+                                                       "        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+                                                       "        radius: 1.35, stop: 0 #fff, stop: 1 #A5E2FF\n"
+                                                       "        );\n"
+                                                       "    }\n"
+                                                       "\n"
+                                                       "QPushButton:pressed {\n"
+                                                       "    color: #0B5AE1;\n"
+                                                       "    border-style: inset;\n"
+                                                       "    background: qradialgradient(\n"
+                                                       "        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,\n"
+                                                       "        radius: 1.35, stop: 0 #fff, stop: 1 #D7B5F9\n"
+                                                       "        );\n"
+                                                       "    }")
+        self.pushButton_instruction_wroc.setObjectName(
+            "pushButton_instruction_wroc")
 
         self.retranslateUi(dialog_game)
         QtCore.QMetaObject.connectSlotsByName(dialog_game)
+        self.pushButton_instruction.clicked.connect(self.print_instruction)
+        self.pushButton_instruction_wroc.clicked.connect(self.hide_instruction)
 
     def retranslateUi(self, dialog_game):
         _translate = QtCore.QCoreApplication.translate
         dialog_game.setWindowTitle(_translate("dialog_game", "Dialog"))
-        self.pushButton_singleplayer.setText(_translate("dialog_game", "SINGLEPLAYER"))
-        self.pushButton_multiplayer.setText(_translate("dialog_game", "MULTIPLAYER"))
-        self.pushButton_instruction.setText(_translate("dialog_game", "INSTRUKCJA"))
+        self.pushButton_singleplayer.setText(
+            _translate("dialog_game", "SINGLEPLAYER"))
+        self.pushButton_multiplayer.setText(
+            _translate("dialog_game", "MULTIPLAYER"))
+        self.pushButton_instruction.setText(
+            _translate("dialog_game", "INSTRUKCJA"))
         self.Wisielec_napis.setText(_translate("dialog_game", "Wisielec"))
-        self.groupBox_instruction.setTitle(_translate("dialog_game", "Instrukcja"))
+        self.groupBox_instruction.setTitle(
+            _translate("dialog_game", "Instrukcja"))
         self.textBrowser_instruction_text.setHtml(_translate("dialog_game", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">1.  W grze multiplayer gracz pierwszy podaje słowo i oprzekazuje urządzenie graczowi drugiemu,  który zgaduje słowo wpisane przez gracza pierwszego. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">2.  W grze singleplayer gracz zgaduje wymyślone przez komputer słowo. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">3.  Niedopuszczalne jest definiowanie słów z myślnikami czy znakami białymi.   </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">4.  Słowa zgadujemy,  wpisując po jednej literze alfabetu polskiego. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">5.  Jeśli domyślasz się,  jakie będzie słowo zanim zgadniesz wszystkie litery, możesz podjąć próbę odgadnięcia go,  wciskając przycisk &quot;tak&quot; w polu &quot;Czy chcesz odgadnąć hasło&quot;,  a następnie wpisując słowo.  W razie nieudanej próby zostanie odjęte 5 pkt. </span></p></body></html>"))
-        self.pushButton_instruction_wroc.setText(_translate("dialog_game", "Wróć"))
+                                                             "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                                             "p, li { white-space: pre-wrap; }\n"
+                                                             "</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+                                                             "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">1.  W grze multiplayer gracz pierwszy podaje słowo i oprzekazuje urządzenie graczowi drugiemu,  który zgaduje słowo wpisane przez gracza pierwszego. </span></p>\n"
+                                                             "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">2.  W grze singleplayer gracz zgaduje wymyślone przez komputer słowo. </span></p>\n"
+                                                             "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">3.  Niedopuszczalne jest definiowanie słów z myślnikami czy znakami białymi.   </span></p>\n"
+                                                             "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">4.  Słowa zgadujemy,  wpisując po jednej literze alfabetu polskiego. </span></p>\n"
+                                                             "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">5.  Jeśli domyślasz się,  jakie będzie słowo zanim zgadniesz wszystkie litery, możesz podjąć próbę odgadnięcia go,  wciskając przycisk &quot;tak&quot; w polu &quot;Czy chcesz odgadnąć hasło&quot;,  a następnie wpisując słowo.  W razie nieudanej próby zostanie odjęte 5 pkt. </span></p></body></html>"))
+        self.pushButton_instruction_wroc.setText(
+            _translate("dialog_game", "Wróć"))
+
+    def print_instruction(self):
+        self.groupBox_instruction.setVisible(True)
+
+    def hide_instruction(self):
+        self.groupBox_instruction.setVisible(False)
 
 
 if __name__ == "__main__":
