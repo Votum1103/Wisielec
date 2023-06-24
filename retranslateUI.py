@@ -11,6 +11,10 @@ def retranslateUi(self, Dialog):
         _translate("Dialog", "Czy chcesz odgadnąć hasło?"))
     self.yes_pushButton.setText(_translate("Dialog", "Tak"))
     self.no_pushButton.setText(_translate("Dialog", "Nie"))
+    self.pushButton_input_word_zatwierdz.setText(
+        _translate("Dialog", "Zatwierdź"))
+    self.label_input_word_question.setText(
+        _translate("Dialog",  "<html><head/><body><p align=\"center\"><span style=\" color:#000000;\">Podaj słowo do zgadnięcia</span></p></body></html>"))
     self.wisielec_label.setText(_translate(
         "Dialog", "<html><head/><body><p align=\"center\"><span style=\" color:#000000;\">WISIELEC</span></p></body></html>"))
     self.a_pushButton.setText(_translate("Dialog", "A"))

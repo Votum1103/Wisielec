@@ -14,6 +14,7 @@ from Wisielec_yes_no_pushbutton import yes_no_pushbutton
 from Wisielec_zdj import zdj
 from Wisielec_wisielec_label import wisielec_label
 from Wisielec_keyword_label import keyword_label
+from Wisielec_groupbox_input_word import groupbox_input_word
 
 
 class Ui_Dialog(object):
@@ -26,9 +27,13 @@ class Ui_Dialog(object):
         wisielec_label(self, Dialog)
         keyword_label(self, Dialog)
         zdj(self, Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
         push_button_style(self, Dialog)
+        groupbox_input_word(self, Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
         retranslateUi(self, Dialog)
+
+    def hide_input_groupbox(self):
+        self.groupBox_input_word.setVisible(False)
 
 
 if __name__ == "__main__":
