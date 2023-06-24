@@ -47,5 +47,9 @@ def groupbox_input_word(self, Dialog):
                                                        "    }")
     self.pushButton_input_word_zatwierdz.setObjectName(
         "pushButton_input_word_zatwierdz")
+    self.linedit_given_word = QtWidgets.QLineEdit(self.groupBox_input_word)
+    self.linedit_given_word.setGeometry(QtCore.QRect(60, 180, 471, 51))
+    self.linedit_given_word.setObjectName(
+        "linedit_given_word")
     self.pushButton_input_word_zatwierdz.clicked.connect(
         self.hide_input_groupbox)
