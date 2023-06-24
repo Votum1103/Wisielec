@@ -35,6 +35,10 @@ class Ui_Dialog(object):
     def hide_input_groupbox(self):
         self.groupBox_input_word.setVisible(False)
 
+    def assignVariable(self):
+        word = self.linedit_given_word.text()
+        self.keyword_label.setText("_ "*len(word))
+
 
 if __name__ == "__main__":
     import sys

@@ -14,7 +14,7 @@ def groupbox_input_word(self, Dialog):
     self.label_input_word_question = QtWidgets.QLabel(
         self.groupBox_input_word)
     self.label_input_word_question.setGeometry(
-        QtCore.QRect(180, 40, 271, 61))
+        QtCore.QRect(160, 40, 271, 61))
     self.label_input_word_question.setObjectName(
         "label_input_word_question")
     self.pushButton_input_word_zatwierdz = QtWidgets.QPushButton(
@@ -23,7 +23,6 @@ def groupbox_input_word(self, Dialog):
         QtCore.QRect(440, 290, 113, 32))
     self.pushButton_input_word_zatwierdz.setStyleSheet("QPushButton {\n"
                                                        "    color: #565A5B;\n"
-                                                       "    border: 1px solid black;\n"
                                                        "    font-size: 14px;\n"
                                                        "    border-radius: 10px;\n"
                                                        "    background-color: #C5DEEB;\n"
@@ -51,5 +50,6 @@ def groupbox_input_word(self, Dialog):
     self.linedit_given_word.setGeometry(QtCore.QRect(60, 180, 471, 51))
     self.linedit_given_word.setObjectName(
         "linedit_given_word")
+    self.pushButton_input_word_zatwierdz.clicked.connect(self.assignVariable)
     self.pushButton_input_word_zatwierdz.clicked.connect(
         self.hide_input_groupbox)

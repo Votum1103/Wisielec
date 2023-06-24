@@ -19,7 +19,6 @@ def single_player_pushbutton(self, dialog_game):
                                                "    color: #0BAEF5;\n"
                                                "    font-size: 18px;\n"
                                                "    text-align: right;\n"
-                                               "    border: 1px solid #89959B;\n"
                                                "    border-radius: 10px;\n"
                                                "    background: qlineargradient(\n"
                                                "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #0BAEF5  stop: 0.3 #0BAEF5\n"

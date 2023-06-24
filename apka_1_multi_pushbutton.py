@@ -19,7 +19,6 @@ def multi_player_pushbutton(self, dialog_game):
                                               "    color: #F27FFA;\n"
                                               "    text-align: right;\n"
                                               "    font-size: 18px;\n"
-                                              "    border: 1px solid #89959B;\n"
                                               "    border-radius: 10px;\n"
                                               "    background: qlineargradient(\n"
                                               "        x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #F27FFA,  stop: 0.3 #F27FFA\n"

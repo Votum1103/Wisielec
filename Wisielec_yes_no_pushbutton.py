@@ -11,7 +11,6 @@ def yes_no_pushbutton(self, Dialog):
     self.yes_pushButton.setFont(font)
     self.yes_pushButton.setStyleSheet("QPushButton {\n"
                                       "    color: #565A5B;\n"
-                                      "    border: 1px solid black;\n"
                                       "    font-size: 14px;\n"
                                       "    border-radius: 10px;\n"
                                       "    background-color: #C5DEEB;\n"
@@ -39,7 +38,6 @@ def yes_no_pushbutton(self, Dialog):
     self.no_pushButton.setFont(font)
     self.no_pushButton.setStyleSheet("QPushButton {\n"
                                      "    color: #565A5B;\n"
-                                     "    border: 1px solid black;\n"
                                      "    font-size: 14px;\n"
                                      "    border-radius: 10px;\n"
                                      "    background-color: #C5DEEB;\n"
