@@ -31,18 +31,22 @@ class Ui_Dialog(object):
         groupbox_input_word(self, Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         retranslateUi(self, Dialog)
-        self.word = ""
 
     def hide_input_groupbox(self):
         self.groupBox_input_word.setVisible(False)
 
     def assignVariable(self):
-        word = self.linedit_given_word.text()
-        self.keyword_label.setText("_ "*len(word))
+        self.given_word = self.linedit_given_word.text()
+        self.word = "_ "*len(self.given_word)
+        self.keyword_label.setText(self.word)
 
     def addToWord(self, letter):
-        self.word += letter
-        self.keyword_label.setText(self.word)
+        for index, char in enumerate(self.given_word):
+            if char == letter:
+                index_space = index*2
+                self.word = self.word[:index_space] + \
+                    letter + self.word[index_space+1:]
+                self.keyword_label.setText(self.word)
 
 
 if __name__ == "__main__":
