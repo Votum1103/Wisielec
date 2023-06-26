@@ -1,10 +1,11 @@
 from PyQt5 import QtCore, QtWidgets
 from Single_text import single_text
 from push_button_styles import push_button_style
-from Wisielec_question_label import question_pushButton
+from Wisielec_question_pushbutton import question_pushButton
 from Wisielec_wisielec_label import wisielec_label
 from Wisielec_keyword_label import keyword_label
 from Wisielec_zdj import zdj
+from Wisielec_groupbox_guess_word import groupbox_guess_word
 import random
 
 
@@ -38,6 +39,17 @@ class Ui_Dialog_single(object):
                 self.word = self.word[:index_space] + \
                     letter.capitalize() + self.word[index_space + 1:]
                 self.keyword_label.setText(self.word)
+
+    def show_groupbox(self):
+        groupbox_guess_word(self, Dialog_single)
+
+    def try_to_guess(self):
+        self.guess_word = self.linedit_guess_word.text()
+        if self.given_word.upper() == self.guess_word.upper():
+            self.keyword_label.setText(self.guess_word.upper())
+            self.groupBox_guess_word.setVisible(False)
+        else:
+            self.groupBox_guess_word.setVisible(False)
 
 
 if __name__ == "__main__":
