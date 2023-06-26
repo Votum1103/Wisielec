@@ -31,6 +31,7 @@ class Ui_Dialog(object):
         groupbox_input_word(self, Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         retranslateUi(self, Dialog)
+        self.word = ""
 
     def hide_input_groupbox(self):
         self.groupBox_input_word.setVisible(False)
@@ -38,6 +39,10 @@ class Ui_Dialog(object):
     def assignVariable(self):
         word = self.linedit_given_word.text()
         self.keyword_label.setText("_ "*len(word))
+
+    def addToWord(self, letter):
+        self.word += letter
+        self.keyword_label.setText(self.word)
 
 
 if __name__ == "__main__":
