@@ -6,6 +6,7 @@ from Wisielec_yes_no_pushbutton import yes_no_pushbutton
 from Wisielec_wisielec_label import wisielec_label
 from Wisielec_keyword_label import keyword_label
 from Wisielec_zdj import zdj
+import random
 
 
 class Ui_Dialog_single(object):
@@ -22,6 +23,15 @@ class Ui_Dialog_single(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog_single)
         single_text(self, Dialog_single)
 
+    def assignVariableSingle(self):
+        plik = "dane.txt"
+        plik = open(plik, "r", encoding='utf8')
+        words_from_file = plik.read().split(",")
+        self.given_word = "".join(random.sample(
+            words_from_file, 1)).strip().lower()
+        self.word = "_ " * len(self.given_word)
+        self.keyword_label.setText(self.word)
+
 
 if __name__ == "__main__":
     import sys
@@ -30,4 +40,5 @@ if __name__ == "__main__":
     ui = Ui_Dialog_single()
     ui.setupUi(Dialog_single)
     Dialog_single.show()
+    ui.assignVariableSingle()
     sys.exit(app.exec_())

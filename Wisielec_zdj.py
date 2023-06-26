@@ -24,3 +24,4 @@ def zdj(self, Dialog):
         list[0].setGeometry(QtCore.QRect(30, 110, 241, 261))
         list[0].setStyleSheet("background-color:transparent;")
         list[0].setPixmap(QtGui.QPixmap(list[1]))
+        list[0].setVisible(False)
