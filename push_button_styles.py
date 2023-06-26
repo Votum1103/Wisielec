@@ -92,3 +92,4 @@ def push_button_style(self, Dialog):
                               "}")
         list[0].setObjectName(f"{list[1]}_pushButton")
         list[0].clicked.connect(lambda _, l=list[2]: self.addToWord(l))
+        list[0].clicked.connect(lambda _, button= list[0]: button.setVisible(False))
