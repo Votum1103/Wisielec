@@ -2,7 +2,6 @@ from PyQt5 import QtCore, QtWidgets
 from Single_text import single_text
 from push_button_styles import push_button_style
 from Wisielec_question_label import question_pushButton
-from Wisielec_yes_no_pushbutton import yes_no_pushbutton
 from Wisielec_wisielec_label import wisielec_label
 from Wisielec_keyword_label import keyword_label
 from Wisielec_zdj import zdj
@@ -31,6 +30,14 @@ class Ui_Dialog_single(object):
             words_from_file, 1)).strip().lower()
         self.word = "_ " * len(self.given_word)
         self.keyword_label.setText(self.word)
+
+    def addToWord(self, letter):
+        for index, char in enumerate(self.given_word):
+            if char == letter.lower() or char == letter.capitalize():
+                index_space = index * 2
+                self.word = self.word[:index_space] + \
+                    letter.capitalize() + self.word[index_space + 1:]
+                self.keyword_label.setText(self.word)
 
 
 if __name__ == "__main__":

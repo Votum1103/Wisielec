@@ -18,6 +18,7 @@ class FirstWindow(QtWidgets.QDialog, Ui_dialog_game):
         self.hide()
         self.singleWindow = ThirdWindow()
         self.singleWindow.show()
+        self.singleWindow.assignVariableSingle()
 
     def openSecondWindowFromMulti(self):
         self.hide()
