@@ -68,8 +68,8 @@ def push_button_style(self, Dialog):
                          [self.x_pushButton, "x", "x"],
                          [self.y_pushButton, "y", "y"],
                          [self.z_pushButton, "z", "z"],
-                         [self.zz_pushButton, "zz", "ż"],
-                         [self.zzz_pushButton, "zzz", "ź"]]
+                         [self.zz_pushButton, "zz", "ź"],
+                         [self.zzz_pushButton, "zzz", "ż"]]
     for index, list in enumerate(self.button_names):
         if index < 17:
             list[0].setGeometry(QtCore.QRect(90 + 30 * index, 450, 21, 28))
