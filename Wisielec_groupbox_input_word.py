@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtWidgets, QtGui
 
 def groupbox_input_word(self, Dialog):
     self.groupBox_input_word = QtWidgets.QGroupBox(Dialog)
-    self.groupBox_input_word.setGeometry(QtCore.QRect(40, 90, 601, 351))
+    self.groupBox_input_word.setGeometry(QtCore.QRect(40, 90, 601, 431))
     font = QtGui.QFont()
     font.setFamily("Helvetica")
     font.setPointSize(24)
@@ -20,7 +20,7 @@ def groupbox_input_word(self, Dialog):
     self.pushButton_input_word_zatwierdz = QtWidgets.QPushButton(
         self.groupBox_input_word)
     self.pushButton_input_word_zatwierdz.setGeometry(
-        QtCore.QRect(440, 290, 113, 32))
+        QtCore.QRect(450, 370, 113, 32))
     self.pushButton_input_word_zatwierdz.setStyleSheet("QPushButton {\n"
                                                        "    color: #565A5B;\n"
                                                        "    font-size: 14px;\n"
@@ -47,7 +47,7 @@ def groupbox_input_word(self, Dialog):
     self.pushButton_input_word_zatwierdz.setObjectName(
         "pushButton_input_word_zatwierdz")
     self.linedit_given_word = QtWidgets.QLineEdit(self.groupBox_input_word)
-    self.linedit_given_word.setGeometry(QtCore.QRect(60, 180, 471, 51))
+    self.linedit_given_word.setGeometry(QtCore.QRect(60, 200, 471, 51))
     self.linedit_given_word.setObjectName(
         "linedit_given_word")
     self.pushButton_input_word_zatwierdz.clicked.connect(self.assignVariable)
