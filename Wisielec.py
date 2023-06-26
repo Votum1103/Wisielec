@@ -9,7 +9,7 @@
 from PyQt5 import QtCore, QtWidgets, QtGui
 from retranslateUI import retranslateUi
 from push_button_styles import push_button_style
-from Wisielec_question_label import question_label
+from Wisielec_question_label import question_pushButton
 from Wisielec_yes_no_pushbutton import yes_no_pushbutton
 from Wisielec_wisielec_label import wisielec_label
 from Wisielec_keyword_label import keyword_label
@@ -22,8 +22,7 @@ class Ui_Dialog_multi(object):
         Dialog.setObjectName("Dialog")
         Dialog.resize(677, 574)
         Dialog.setStyleSheet("background-color: white")
-        question_label(self, Dialog)
-        yes_no_pushbutton(self, Dialog)
+        question_pushButton(self, Dialog)
         wisielec_label(self, Dialog)
         keyword_label(self, Dialog)
         self.szub9_label = QtWidgets.QLabel(Dialog)

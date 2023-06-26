@@ -4,10 +4,6 @@ from PyQt5 import QtCore
 def retranslateUi(self, Dialog):
     _translate = QtCore.QCoreApplication.translate
     Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-    self.groupBox_question.setTitle(
-        _translate("Dialog", "Czy chcesz odgadnąć hasło?"))
-    self.yes_pushButton.setText(_translate("Dialog", "Tak"))
-    self.no_pushButton.setText(_translate("Dialog", "Nie"))
     self.pushButton_input_word_zatwierdz.setText(
         _translate("Dialog", "Zatwierdź"))
     self.label_input_word_question.setText(
@@ -48,5 +44,5 @@ def retranslateUi(self, Dialog):
     self.y_pushButton.setText(_translate("Dialog", "Y"))
     self.ss_pushButton.setText(_translate("Dialog", "Ś"))
     self.x_pushButton.setText(_translate("Dialog", "X"))
-    self.question_label.setText(_translate(
-        "Dialog", "<html><head/><body><p align=\"center\"><span style=\" color:#000000;\">Czy chcesz odgadnąć słowo</span></p></body></html>"))
+    self.question_pushButton.setText(
+        _translate("Dialog", "Chcę zgadnąć słowo"))
