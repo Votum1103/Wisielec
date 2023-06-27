@@ -23,6 +23,7 @@ class Ui_Dialog_multi(object):
         groupbox_input_word(self, Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         retranslateUi(self, Dialog)
+        groupbox_guess_word(self, Dialog)
 
     def hide_input_groupbox(self):
         self.groupBox_input_word.setVisible(False)
@@ -41,7 +42,8 @@ class Ui_Dialog_multi(object):
                 self.keyword_label.setText(self.word)
 
     def show_groupbox(self):
-        groupbox_guess_word(self, Dialog)
+        self.groupBox_guess_word.setVisible(True)
+        
 
     def try_to_guess(self):
         self.guess_word = self.linedit_guess_word.text()

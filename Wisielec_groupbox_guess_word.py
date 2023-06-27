@@ -1,3 +1,4 @@
+from pickle import FALSE
 from PyQt5 import QtCore, QtWidgets, QtGui
 
 
@@ -10,14 +11,13 @@ def groupbox_guess_word(self, Dialog):
     self.groupBox_guess_word.setFont(font)
     self.groupBox_guess_word.setStyleSheet("color: black;")
     self.groupBox_guess_word.setObjectName("groupBox_input_word")
-    self.groupBox_guess_word.setVisible(True)
+    self.groupBox_guess_word.setVisible(False)
     self.label_guess_word = QtWidgets.QLabel(
         self.groupBox_guess_word)
     self.label_guess_word.setGeometry(
         QtCore.QRect(90, 30, 131, 31))
     self.label_guess_word.setObjectName(
         "label_guess_word")
-    self.label_guess_word.setVisible(True)
     self.pushButton_guess_word_zatwierdz = QtWidgets.QPushButton(
         self.groupBox_guess_word)
     self.pushButton_guess_word_zatwierdz.setGeometry(
@@ -47,12 +47,10 @@ def groupbox_guess_word(self, Dialog):
                                                        "    }")
     self.pushButton_guess_word_zatwierdz.setObjectName(
         "pushButton_guess_word_zatwierdz")
-    self.pushButton_guess_word_zatwierdz.setVisible(True)
     self.linedit_guess_word = QtWidgets.QLineEdit(self.groupBox_guess_word)
     self.linedit_guess_word.setGeometry(QtCore.QRect(20, 80, 241, 41))
     self.linedit_guess_word.setObjectName(
         "linedit_guess_word")
-    self.linedit_guess_word.setVisible(True)
     self.pushButton_guess_word_zatwierdz.clicked.connect(self.try_to_guess)
     _translate = QtCore.QCoreApplication.translate
     self.label_guess_word.setText(_translate("Dialog", "Wpisz słowo"))

@@ -22,6 +22,7 @@ class Ui_Dialog_single(object):
         push_button_style(self, Dialog_single)
         QtCore.QMetaObject.connectSlotsByName(Dialog_single)
         single_text(self, Dialog_single)
+        groupbox_guess_word(self, Dialog_single)
 
     def assignVariableSingle(self):
         plik = "dane.txt"
@@ -41,7 +42,7 @@ class Ui_Dialog_single(object):
                 self.keyword_label.setText(self.word)
 
     def show_groupbox(self):
-        groupbox_guess_word(self, Dialog_single)
+        self.groupBox_guess_word.setVisible(True)
 
     def try_to_guess(self):
         self.guess_word = self.linedit_guess_word.text()

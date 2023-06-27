@@ -1,5 +1,4 @@
 from PyQt5 import QtWidgets
-from Single import Ui_Dialog_single
 from apka_1 import Ui_dialog_game
 from Wisielec import Ui_Dialog_multi
 from Single import Ui_Dialog_single
