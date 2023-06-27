@@ -23,6 +23,7 @@ class Ui_Dialog_single(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog_single)
         single_text(self, Dialog_single)
         groupbox_guess_word(self, Dialog_single)
+        self.photo_index = 0  
 
     def assignVariableSingle(self):
         plik = "dane.txt"
@@ -51,6 +52,25 @@ class Ui_Dialog_single(object):
             self.groupBox_guess_word.setVisible(False)
         else:
             self.groupBox_guess_word.setVisible(False)
+
+    def show_wisielec(self, letter):
+        photos = [self.szub1_label,
+                  self.szub2_label,
+                  self.szub3_label,
+                  self.szub4_label,
+                  self.szub5_label,
+                  self.szub6_label,
+                  self.szub7_label,
+                  self.szub8_label,
+                  self.szub9_label]
+
+        if self.photo_index == 0 and letter.lower() not in self.given_word:
+            photos[self.photo_index].setVisible(True)
+            self.photo_index += 1
+        elif letter.lower() not in self.given_word:
+            photos[self.photo_index-1].setVisible(False)
+            photos[self.photo_index].setVisible(True)
+            self.photo_index += 1
 
 
 if __name__ == "__main__":
