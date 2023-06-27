@@ -1,3 +1,6 @@
+from PyQt5 import QtCore, QtWidgets, QtGui
+from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
+from PyQt5.QtCore import QUrl
 from PyQt5 import QtCore, QtWidgets
 from Single_text import single_text
 from push_button_styles import push_button_style
@@ -7,6 +10,7 @@ from Wisielec_keyword_label import keyword_label
 from Wisielec_zdj import zdj
 from Wisielec_groupbox_guess_word import groupbox_guess_word
 import random
+from Wisielec_Music import play_music_in_game
 
 
 class Ui_Dialog_single(object):
@@ -23,7 +27,9 @@ class Ui_Dialog_single(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog_single)
         single_text(self, Dialog_single)
         groupbox_guess_word(self, Dialog_single)
-        self.photo_index = 0  
+        self.photo_index = 0 
+        play_music_in_game(self, Dialog_single)
+        
 
     def assignVariableSingle(self):
         plik = "dane.txt"
@@ -72,6 +78,13 @@ class Ui_Dialog_single(object):
             photos[self.photo_index].setVisible(True)
             self.photo_index += 1
 
+    def play_music_after_getting_letter(self):
+        self.player1 = QMediaPlayer()
+        url = QUrl.fromLocalFile("When_you_get_letter.wav")
+        content = QMediaContent(url)
+        self.player1.setMedia(content)
+        self.player1.setVolume(30)
+        self.player1.play()
 
 if __name__ == "__main__":
     import sys
