@@ -7,6 +7,8 @@ from Wisielec_keyword_label import keyword_label
 from Wisielec_groupbox_input_word import groupbox_input_word
 from Wisielec_groupbox_guess_word import groupbox_guess_word
 from Wisielec_zdj import zdj
+from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
+from PyQt5.QtCore import QUrl
 
 
 class Ui_Dialog_multi(object):
@@ -25,6 +27,7 @@ class Ui_Dialog_multi(object):
         retranslateUi(self, Dialog)
         groupbox_guess_word(self, Dialog)
         self.photo_index = 0
+        self.play_music_in_game()
 
     def hide_input_groupbox(self):
         self.groupBox_input_word.setVisible(False)
@@ -72,7 +75,21 @@ class Ui_Dialog_multi(object):
             photos[self.photo_index].setVisible(True)
             self.photo_index += 1
 
+    def play_music_in_game(self):
+        self.player = QMediaPlayer()
+        url = QUrl.fromLocalFile("Happy.mp3")
+        content = QMediaContent(url)
+        self.player.setMedia(content)
+        self.player.setVolume(5)
+        self.player.play()
 
+    def play_music_after_getting_letter(self):
+        self.player1 = QMediaPlayer()
+        url = QUrl.fromLocalFile("When_you_get_letter.wav")
+        content = QMediaContent(url)
+        self.player1.setMedia(content)
+        self.player1.setVolume(30)
+        self.player1.play()
 
 if __name__ == "__main__":
     import sys

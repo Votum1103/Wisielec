@@ -95,3 +95,4 @@ def push_button_style(self, Dialog):
         list[0].clicked.connect(
             lambda _, button=list[0]: button.setVisible(False))
         list[0].clicked.connect(lambda _, l=list[2]: self.show_wisielec(l))
+        list[0].clicked.connect(self.play_music_after_getting_letter)
