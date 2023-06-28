@@ -29,13 +29,22 @@ class Ui_Dialog_multi(object):
         groupbox_guess_word(self, Dialog)
         self.photo_index = 0
         play_music_in_game(self, Dialog)
-        
+
     def hide_input_groupbox(self):
         self.groupBox_input_word.setVisible(False)
 
     def assignVariable(self):
         self.given_word = self.linedit_given_word.text()
         self.word = "_ " * len(self.given_word)
+        for index, char in enumerate(self.given_word):
+            if char == " ":
+                index_space = index * 2
+                self.word = self.word[:index_space] + \
+                    " " + self.word[index_space + 1:]
+            elif char == "-":
+                index_space = index * 2
+                self.word = self.word[:index_space] + \
+                    "-" + self.word[index_space + 1:]
         self.keyword_label.setText(self.word)
 
     def addToWord(self, letter):
@@ -83,9 +92,6 @@ class Ui_Dialog_multi(object):
         self.player1.setMedia(content)
         self.player1.setVolume(30)
         self.player1.play()
-
-
-    
 
 
 if __name__ == "__main__":
