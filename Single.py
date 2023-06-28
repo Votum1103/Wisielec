@@ -27,9 +27,8 @@ class Ui_Dialog_single(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog_single)
         single_text(self, Dialog_single)
         groupbox_guess_word(self, Dialog_single)
-        self.photo_index = 0 
+        self.photo_index = 0
         play_music_in_game(self, Dialog_single)
-        
 
     def assignVariableSingle(self):
         plik = "dane.txt"
@@ -55,9 +54,11 @@ class Ui_Dialog_single(object):
         self.guess_word = self.linedit_guess_word.text()
         if self.given_word.upper() == self.guess_word.upper():
             self.keyword_label.setText(self.guess_word.upper())
-            self.groupBox_guess_word.setVisible(False)
+            self.groupBox_guess_word.hide()
         else:
-            self.groupBox_guess_word.setVisible(False)
+            self.timer.start(800)
+            self.linedit_guess_word.hide()
+            self.label_wrong_word.show()
 
     def show_wisielec(self, letter):
         photos = [self.szub1_label,
@@ -78,6 +79,11 @@ class Ui_Dialog_single(object):
             photos[self.photo_index].setVisible(True)
             self.photo_index += 1
 
+    def hide_label(self):
+        self.label_wrong_word.hide()
+        self.linedit_guess_word.show()
+        self.groupBox_guess_word.hide()
+
     def play_music_after_getting_letter(self):
         self.player1 = QMediaPlayer()
         url = QUrl.fromLocalFile("When_you_get_letter.wav")
@@ -85,6 +91,7 @@ class Ui_Dialog_single(object):
         self.player1.setMedia(content)
         self.player1.setVolume(30)
         self.player1.play()
+
 
 if __name__ == "__main__":
     import sys

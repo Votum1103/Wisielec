@@ -65,6 +65,7 @@ def groupbox_guess_word(self, Dialog):
     self.pushButton_guess_word_zatwierdz.setText(
         _translate("Dialog", "Zatwierdź"))
     self.label_wrong_word.setText(_translate("Dialog", "ŹLE"))
+    self.label_wrong_word.setStyleSheet("background-color: red")
     self.timer = QtCore.QTimer(Dialog)
     self.timer.timeout.connect(self.hide_label)
     self.timer.setSingleShot(True)

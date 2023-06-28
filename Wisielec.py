@@ -66,7 +66,7 @@ class Ui_Dialog_multi(object):
             self.keyword_label.setText(self.guess_word.upper())
             self.groupBox_guess_word.hide()
         else:
-            self.timer.start(1000)
+            self.timer.start(800)
             self.linedit_guess_word.hide()
             self.label_wrong_word.show()
 
