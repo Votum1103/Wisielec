@@ -10,6 +10,7 @@ from Wisielec_groupbox_input_word import groupbox_input_word
 from Wisielec_groupbox_guess_word import groupbox_guess_word
 from Wisielec_zdj import zdj
 from Wisielec_Music import play_music_in_game
+from Single_text import single_text
 
 
 class Ui_Dialog_multi(object):
@@ -26,6 +27,7 @@ class Ui_Dialog_multi(object):
         groupbox_input_word(self, Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         retranslateUi(self, Dialog)
+        single_text(self, Dialog)
         groupbox_guess_word(self, Dialog)
         self.photo_index = 0
         play_music_in_game(self, Dialog)
@@ -56,15 +58,22 @@ class Ui_Dialog_multi(object):
                 self.keyword_label.setText(self.word)
 
     def show_groupbox(self):
-        self.groupBox_guess_word.setVisible(True)
+        self.groupBox_guess_word.show()
 
     def try_to_guess(self):
         self.guess_word = self.linedit_guess_word.text()
         if self.given_word.upper() == self.guess_word.upper():
             self.keyword_label.setText(self.guess_word.upper())
-            self.groupBox_guess_word.setVisible(False)
+            self.groupBox_guess_word.hide()
         else:
-            self.groupBox_guess_word.setVisible(False)
+            self.timer.start(1000)
+            self.linedit_guess_word.hide()
+            self.label_wrong_word.show()
+
+    def hide_label(self):
+        self.label_wrong_word.hide()
+        self.linedit_guess_word.show()
+        self.groupBox_guess_word.hide()
 
     def show_wisielec(self, letter):
         photos = [self.szub1_label,

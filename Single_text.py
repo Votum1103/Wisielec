@@ -41,4 +41,4 @@ def single_text(self, Dialog):
     self.ss_pushButton.setText(_translate("Dialog", "Ś"))
     self.x_pushButton.setText(_translate("Dialog", "X"))
     self.question_pushButton.setText(
-        _translate("Dialog", "Chcę zgadnąć słowo"))
+        _translate("Dialog", "Chcę zgadnąć hasło"))
